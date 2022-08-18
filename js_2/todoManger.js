@@ -24,21 +24,25 @@ export const deleteSingleProduct = (_idDel) => {
         todo_ar.splice(i,1);
       }
     })
+    updateLocal();
     createTodoList();
   }
   
 export const addTask = item =>{
     todo_ar.push(item);
-    localStorage.setItem("todo_array",JSON.stringify(todo_ar))
+    updateLocal()
     createTodoList();
 }
 export const deleteAll = () => { 
     if(confirm("Are you sure you want to delete all?")){
         todo_ar.splice(0,todo_ar.length);
-        localStorage.setItem("todo_array",JSON.stringify(todo_ar))
+        updateLocal()
         createTodoList();
     }
 }
 const cleanArr =() =>{
       todo_ar.splice(0,todo_ar.length);
+}
+const updateLocal = () =>{
+  localStorage.setItem("todo_array",JSON.stringify(todo_ar))
 }
