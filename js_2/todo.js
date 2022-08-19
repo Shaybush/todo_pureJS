@@ -14,7 +14,7 @@ export default class Todo{
         tr.innerHTML +=`
         <td>${this.task}</td>
         <td>${this.time}</td>
-        <td class="remove text-danger fs-5 d-flex justify-content-center">X</td>
+        <td class="remove text-danger fs-5 mx-auto">X</td>
         `
         let del_task = tr.querySelector(".remove");
         del_task.addEventListener("click",()=>{

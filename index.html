@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -15,16 +15,16 @@
 
 <body>
     <main>
-        <div class="container">
+        <div class="container pt-3">
             <div class="col-md-6 col-9 mx-auto mb-3">
                 <form class="form-control" id="id_form">
-                    <label>Task Name : </label>
-                    <input type="text" class="col-12" id="id_task">
-                    <label>Clock alerm : </label>
-                    <input type="time" class="col-12" id="id_time">
+                    <label class="form-label">משימה :</label>
+                    <input type="text" class="col-12 form-control mb-2" id="id_task">
+                    <label class="form-label">שעה :</label>
+                    <input type="time" class="col-12 form-control" id="id_time">
                     <div class="controls mt-3 p-2">
-                        <button type="button" class="btn btn-danger btn-sm" id="del_btn">Remove all tasks</button>
-                        <button class="btn btn-success btn-sm">Add Task</button>
+                        <button type="button" class="btn btn-danger btn-sm" id="del_btn">מחק הכל</button>
+                        <button class="btn btn-success btn-sm">הוספה</button>
                     </div>
                 </form>
             </div>
@@ -35,9 +35,9 @@
         <table class="table table-primary table-striped table-bordered">
             <thead>
                 <tr>
-                    <th scope="col" class="col-5">Task</th>
-                    <th scope="col" class="col-5">Time</th>
-                    <th class="col-5"></th>
+                    <th scope="col" class="col-5">משימה</th>
+                    <th scope="col" class="col-5">שעת ביצוע</th>
+                    <th class="col-1 h-100"></th>
                 </tr>
             </thead>
             <tbody id="id_tbody">

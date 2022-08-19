@@ -30,7 +30,8 @@ export const deleteSingleProduct = (_idDel) => {
   
 export const addTask = item =>{
     todo_ar.push(item);
-    updateLocal()
+    updateLocal();
+    clearField();
     createTodoList();
 }
 export const deleteAll = () => { 
@@ -45,4 +46,8 @@ const cleanArr =() =>{
 }
 const updateLocal = () =>{
   localStorage.setItem("todo_array",JSON.stringify(todo_ar))
+}
+const clearField = () =>{
+  document.querySelector("#id_task").value = "";
+  document.querySelector("#id_time").value = ""
 }
