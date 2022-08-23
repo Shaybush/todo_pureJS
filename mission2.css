@@ -14,7 +14,7 @@ header .subTitle{
     font-family: 'DynaPuff', cursive;
 }
 form .form-control:focus {
-    border-color: #FFAC1C;
+    border-color: #feae22;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
   }
 main form {
