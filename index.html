@@ -8,7 +8,8 @@
     <title>Document</title>
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css' rel='stylesheet'
         integrity='sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx' crossorigin='anonymous'>
-        <link rel="stylesheet" href="mission2.css">
+    <link rel="stylesheet" href="mission2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <script src="js_2/todoApp.js" defer type="module"></script>
 </head>
@@ -22,13 +23,13 @@
         <div class="container pt-3">
             <div class="col-md-6 col-9 mx-auto mb-3">
                 <form class="form-control" id="id_form">
-                    <label class="form-label">משימה :</label>
+                    <label class="form-label">משימה  <span class="fa fa-calendar-o" aria-hidden="true"></span></label>
                     <input type="text" class="col-12 form-control mb-2" id="id_task">
-                    <label class="form-label">שעה :</label>
+                    <label class="form-label">שעה <span class="fa fa-clock-o" aria-hidden="true"></span></label>
                     <input type="time" class="col-12 form-control" id="id_time">
                     <div class="controls mt-3 p-2">
-                        <button type="button" class="btn btn-danger" id="del_btn">מחק הכל</button>
-                        <button class="btn btn-success">הוספה</button>
+                        <button type="button" class="btn btn-danger" id="del_btn">מחק הכל <span class="fa fa-minus" aria-hidden="true"></span></button>
+                        <button class="btn btn-success">הוספה <span class="fa fa-plus" aria-hidden="true"></span></button>
                     </div>
                 </form>
             </div>
@@ -39,8 +40,8 @@
         <table class="table table-light table-striped table-bordered">
             <thead>
                 <tr>
-                    <th scope="col" class="col-5">משימה</th>
-                    <th scope="col" class="col-5">שעת ביצוע</th>
+                    <th scope="col" class="col-5">משימה <span class="fa fa-check" aria-hidden="true"></span></th>
+                    <th scope="col" class="col-5">שעת ביצוע <span class="fa fa-calendar" aria-hidden="true"></span></th>
                     <th class="col-1 h-100"></th>
                 </tr>
             </thead>
