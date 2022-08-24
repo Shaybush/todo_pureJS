@@ -1,28 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
 
 body {
-    background: #FFAC1C;
+    background: linear-gradient(90deg, rgba(212, 241, 244, 1) 27%, rgba(24, 154, 180, 1) 70%);
 }
 
 header h2 {
     text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
     font-family: 'DynaPuff', cursive;
+    text-transform: capitalize;
     color: #333;
 }
-header .subTitle{
+
+header .subTitle {
     color: white;
+    font-size: 0.7em;
+    text-transform: capitalize;
     font-family: 'DynaPuff', cursive;
 }
+
 form .form-control:focus {
-    border-color: #feae22;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
-  }
+    border-color: #189AB4;
+    box-shadow: inset 0 1px 1px #d4f1f4b2, 0 0 8px #189ab4b3;
+}
+
 main form {
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
 table {
-    border-radius:8px;
+    border-radius: 8px;
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 
