@@ -1,5 +1,6 @@
 # todo_pureJS
 :tada: Organize your day with my app :)
 ```bash
-hello my name is shay
+This app gonna fix your day!
+Easy way to organize and friendly UI
 ```
