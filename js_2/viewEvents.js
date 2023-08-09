@@ -7,6 +7,8 @@ export const declareEvents = () => {
         let task = document.querySelector("#id_task").value;
         let time = document.querySelector("#id_time").value;
         e.preventDefault();
+
+        // validate the inputs 
         if (task.length < 2) {
             alert("Task name too short!");
             return;
@@ -15,6 +17,7 @@ export const declareEvents = () => {
             alert("please insert date");
             return;
         }
+        
         let currentTime = Date.now();
         let obj = {
             "task": task,
