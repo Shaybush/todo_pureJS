@@ -6,6 +6,4 @@ const init = () => {
     declareEvents();
 }
 
-
-
 init();
