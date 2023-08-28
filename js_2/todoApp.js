@@ -1,10 +1,15 @@
-import { checkLocal, createTodoList } from "./todoManger.js";
+import {
+  checkLocal,
+  createTodoList,
+  setUpTimeToCurrent,
+} from "./todoManger.js";
 import { declareEvents } from "./viewEvents.js";
 
-const init = () => { 
-    checkLocal();
-    createTodoList();
-    declareEvents();
-}
+const init = () => {
+  setUpTimeToCurrent();
+  checkLocal();
+  createTodoList();
+  declareEvents();
+};
 
 init();

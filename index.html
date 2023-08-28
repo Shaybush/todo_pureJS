@@ -23,13 +23,17 @@
         <div class="container pt-3">
             <div class="col-md-6 col-9 mx-auto mb-3">
                 <form class="form-control" id="id_form">
+                    <!-- add task -->
                     <label class="form-label">משימה <span class="fa fa-calendar-o" aria-hidden="true"></span></label>
                     <input type="text" class="col-12 form-control mb-2" id="id_task">
+                    <!-- add time -->
                     <label class="form-label">שעה <span class="fa fa-clock-o" aria-hidden="true"></span></label>
                     <input type="time" class="col-12 form-control" id="id_time">
                     <div class="controls mt-3 p-2">
+                        <!-- delete all button -->
                         <button type="button" class="btn btn-danger" id="del_btn">מחק הכל <span class="fa fa-minus"
                                 aria-hidden="true"></span></button>
+                        <!-- add task -->
                         <button class="btn btn-success">הוספה <span class="fa fa-plus"
                                 aria-hidden="true"></span></button>
                     </div>
@@ -45,6 +49,7 @@
                     <th scope="col" class="col-5">משימה <span class="fa fa-check" aria-hidden="true"></span></th>
                     <th scope="col" class="col-5">שעת ביצוע <span class="fa fa-calendar" aria-hidden="true"></span></th>
                     <th class="col-1 h-100"></th>
+                    <th class="col-1 h-100 text-center">בוצע</th>
                 </tr>
             </thead>
             <tbody id="id_tbody">
