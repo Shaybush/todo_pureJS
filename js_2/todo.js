@@ -34,7 +34,6 @@ export default class Todo {
     cb.checked = this.checked;
 
     cb.addEventListener("change", () => {
-      console.log("here");
       this.checkedSingleTask(this.id, cb.checked);
     });
 

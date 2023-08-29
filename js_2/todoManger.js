@@ -97,5 +97,5 @@ export const setUpTimeToCurrent = () => {
 /** clear inputs */
 const clearField = () => {
   document.querySelector("#id_task").value = "";
-  document.querySelector("#id_time").value = "";
+  setUpTimeToCurrent();
 };
