@@ -71,6 +71,7 @@ table {
   left: 0;
   height: 22px;
   width: 22px;
+  border: 1px solid black;
   background-color: white;
 }
 
